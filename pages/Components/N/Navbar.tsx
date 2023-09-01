@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { GrFormSearch } from 'react-icons/gr'
+import { LuSearch } from 'react-icons/lu'
 
 const Navbar = () => {
 
@@ -35,8 +35,8 @@ const Navbar = () => {
                     <Link href="/"><li className='py-2'>Testmonials</li></Link>
                     <Link href="/"><li className='py-2'>Blog</li></Link>
                     <Link href="/"><li className='py-2'>Career</li></Link>
-                    <Link href="/"><li className='py-2'><GrFormSearch /></li></Link>
                     <Link href="/"><li className='py-2'>Help</li></Link>
+                    <Link href="/" className='py-2 flex items-center justify-center'><li><LuSearch className="font-extrabold" /></li></Link>
                     <Link href="/"><li className='bg-blue-900 py-2 px-3 rounded-md hover:bg-white hover:text-black transition-all ease-in-out duration-1000'>Regester</li></Link>
                 </ul>
             </div>
