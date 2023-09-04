@@ -22,7 +22,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`flex flex-wrap w-full h-auto text-white px-[18px] py-[8px] text-2xl font-semibold top-0 z-30 justify-between ${isSticky ? 'sticky bg-white text-black shadow-md shadow-gray-300' : 'bg-gradient-to-r items-center from-blue-900 to-orange-600'}`}>
+        <nav className={`flex flex-wrap w-full h-auto px-[18px] py-[8px] text-2xl font-semibold top-0 z-30 justify-between ${isSticky ? 'sticky bg-white text-black shadow-md shadow-gray-300' : 'bg-gradient-to-r items-center from-blue-900 text-white to-orange-600'}`}>
             <Link href={'/'} className="logo-box flex flex-wrap items-center gap-1">
                 <b className='cursor-pointer bg-orange-600 p-2 rounded-lg text-white' title='Universal Developers'>UD</b><b>Tech</b>
             </Link>
