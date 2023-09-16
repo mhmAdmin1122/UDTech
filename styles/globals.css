@@ -1,4 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body::-webkit-scrollbar{
+  width: 1px;
+}
+body::-webkit-scrollbar-track{
+  width: 1px;
+}
+body::-webkit-scrollbar-thumb{
+  width: 1px;
+}
+.dynamic-text li span {
+  position: relative;
+  line-height: 54px;
+}
+.dynamic-text {
+  height: 50px;
+  overflow: hidden;
+}
+.dynamic-text li {
+  position: relative;
+  top: 0;
+  animation: slide 9s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -220px;
+  }
+}
+.dynamic-text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #f3f4f6;
+  border-left: 2px solid #222648;
+  animation: typing 2.5s steps(27) infinite;
+}
 
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0px -35px 0px 35px;
+  }
+}

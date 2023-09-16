@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Navbar from "./Components/N/Navbar";
 import Herobaner from "./Components/H/Herobaner";
-import Brand from "./Components/B/Brand";
-import BuyProjects from "./Components/B/BuyProjects";
+import Layout from "./Components/L/Layout";
 
 export default function Home() {
   return (
@@ -11,13 +9,9 @@ export default function Home() {
         <title>UDTech || Home</title>
         <meta name="description" content="Innovation to tech. Access your skills with Professionals Sugestions." />
       </Head>
-      <Navbar />
-      <Herobaner />
-      <BuyProjects />
-      <Brand />
-      <b className="mt-5">
-        Comming Soon....! Development Process START foe site site completed on 12-Sep-2023
-      </b>
+      <Layout>
+        <Herobaner />
+      </Layout>
     </>
   )
 }
