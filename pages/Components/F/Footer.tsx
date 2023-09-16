@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { FaCopyright, FaLocationArrow, FaFacebook, FaInstagramSquare, FaYoutube, FaTiktok } from 'react-icons/fa'
 
@@ -13,10 +14,18 @@ const Footer = () => {
                 <h3 className='cursor-context-menu'>2023, All Copyright reserved by UDTech </h3>
             </div>
             <div className="social-links flex flex-wrap items-center gap-6">
-                <i className="cursor-pointer text-xl"><FaFacebook /></i>
-                <i className="cursor-pointer text-xl"><FaInstagramSquare /></i>
-                <i className="cursor-pointer text-xl"><FaYoutube /></i>
-                <i className="cursor-pointer text-xl"><FaTiktok /></i>
+                <Link href={'https://www.facebook.com/people/The-Talk-13/100094911926989/'}>
+                    <i className="cursor-pointer text-xl"><FaFacebook /></i>
+                </Link>
+                <Link href={'https://www.instagram.com/udtechoffical/?igshid=MzRlODBiNWFlZA%3D%3D'}>
+                    <i className="cursor-pointer text-xl"><FaInstagramSquare /></i>
+                </Link>
+                <Link href={'https://www.youtube.com/channel/UCoi_0aC3z5_4-2XAyEAaBWg'}>
+                    <i className="cursor-pointer text-xl"><FaYoutube /></i>
+                </Link>
+                <Link href={'/'}>
+                    <i className="cursor-pointer text-xl"><FaTiktok /></i>
+                </Link>
             </div>
         </footer>
     )
