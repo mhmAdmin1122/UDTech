@@ -23,7 +23,7 @@ const Footer = () => {
                 <Link href={'https://www.youtube.com/channel/UCoi_0aC3z5_4-2XAyEAaBWg'} target='_blank'>
                     <i className="cursor-pointer text-xl"><FaYoutube /></i>
                 </Link>
-                <Link href={'/'}>
+                <Link href={'https://www.tiktok.com/@UDTech_world'}>
                     <i className="cursor-pointer text-xl"><FaTiktok /></i>
                 </Link>
             </div>
