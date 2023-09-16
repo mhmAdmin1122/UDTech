@@ -41,7 +41,7 @@ const Navbar = () => {
                 <Link href="/"><li className='py-2'>Help</li></Link>
             </ul>
 
-            <button className='bg-gradient-to-r cursor-pointer from-[#00B4D8] to-[#fff] py-2 px-3 rounded-md text-[#000] transition-all ease-in-out duration-1000 text-lg'>Regester</button>
+            <button className='bg-gradient-to-r cursor-pointer from-[#00B4D8] to-[#fff] py-2 px-[22px] rounded-[61px] text-[#000] transition-all ease-in-out duration-1000 text-lg'>Register</button>
 
         </nav>
     )
