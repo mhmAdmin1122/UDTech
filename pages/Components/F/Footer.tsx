@@ -14,13 +14,13 @@ const Footer = () => {
                 <h3 className='cursor-context-menu'>2023, All Copyright reserved by UDTech </h3>
             </div>
             <div className="social-links flex flex-wrap items-center gap-6">
-                <Link href={'https://www.facebook.com/people/The-Talk-13/100094911926989/'}>
+                <Link href={'https://www.facebook.com/people/The-Talk-13/100094911926989/'} target='_blank'>
                     <i className="cursor-pointer text-xl"><FaFacebook /></i>
                 </Link>
-                <Link href={'https://www.instagram.com/udtechoffical/?igshid=MzRlODBiNWFlZA%3D%3D'}>
+                <Link href={'https://www.instagram.com/udtechoffical/?igshid=MzRlODBiNWFlZA%3D%3D'} target='_blank'>
                     <i className="cursor-pointer text-xl"><FaInstagramSquare /></i>
                 </Link>
-                <Link href={'https://www.youtube.com/channel/UCoi_0aC3z5_4-2XAyEAaBWg'}>
+                <Link href={'https://www.youtube.com/channel/UCoi_0aC3z5_4-2XAyEAaBWg'} target='_blank'>
                     <i className="cursor-pointer text-xl"><FaYoutube /></i>
                 </Link>
                 <Link href={'/'}>
