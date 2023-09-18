@@ -5,11 +5,12 @@ import Image from 'next/image'
 import labelpic from '@/public/img/svg/24service.svg'
 import vec from '@/public/img/svg/services.svg'
 import liveChatPic from '@/public/img/svg/livechat.svg'
-import tutorialPic from '../../public/img/svg/tutorials.svg'
-import certificate from '../../public/img/svg/certificate.svg'
-import reward from '../../public/img/svg/win.svg'
-import careerPic from '../../public/img/svg/career.svg'
+import tutorialPic from '@/public/img/svg/tutorials.svg'
+import certificate from '@/public/img/svg/certificate.svg'
+import reward from '@/public/img/svg/win.svg'
+import careerPic from '@/public/img/svg/career.svg'
 import playstore from '@/public/img/svg/playstore.svg'
+import blogPic from '../../public/img/svg/blog.svg'
 import Link from 'next/link'
 
 const index = () => {
@@ -26,6 +27,7 @@ const index = () => {
                         <Image src={labelpic} alt='24/7-pic' />
                     </div>
                     <div className='flex flex-wrap w-full justify-around items-center'>
+
                         <div className="cards w-[60%] flex flex-wrap gap-9">
 
                             {/* Live chat */}
@@ -58,12 +60,14 @@ const index = () => {
                                 <Link href={'/services'}>Career Resources</Link>
                             </div>
 
+                            {/* Read Blog */}
                             <div className="card6 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                                <Image src={liveChatPic} alt='live-chat' className='px-2 py-3 ' />
-                                <Link href={'/services'}>Live Chat Rooms</Link>
+                                <Image src={blogPic} alt='live-chat' className='px-2 py-3 ' />
+                                <Link href={'/services'}>Read Blog</Link>
                             </div>
 
                         </div>
+
                         <div className="illustaratePic w-[40%] grid justify-items-center items-center">
                             <Image src={vec} alt='24/7-pic' className='relative z-20' />
                             <div className='flex flex-wrap gap-8 items-center'>
@@ -71,6 +75,7 @@ const index = () => {
                                 <button className='bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer text-[#fff] py-2 px-5 rounded-md hover:shadow-lg hover:shadow-[#9798d3] transition-all ease-in-out duration-1000 text-lg font-bold'>About Services</button>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </Layout>
