@@ -55,3 +55,10 @@ body::-webkit-scrollbar-thumb{
 .card6{
   background: linear-gradient(128.55deg, #03045E -18.59%, #0D9CED 134.63%);
 }
+
+form label{
+  @apply font-bold text-xl;
+}
+form input, form textarea{
+  @apply py-2 px-4 bg-[#f5f5f5de] my-1 shadow-md shadow-gray-400 rounded-lg outline-none;
+}

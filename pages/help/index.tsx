@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../Components/L/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -9,8 +9,14 @@ import CoursesProblems from '@/public/img/svg/coursesProblems.svg'
 import paymentProb from '@/public/img/svg/payment.svg'
 import FeedBackPic from '@/public/img/svg/feedback.svg'
 import DownProblems from '@/public/img/svg/download.svg'
+import ContactForm from '../Components/C/ContactForm'
 
-const index = () => {
+const Help = () => {
+    const [isActive, setIsActive] = useState(false);
+
+    const handleClick = (event: any) => {
+        setIsActive(current => !current);
+    };
     return (
         <>
             <Head>
@@ -26,7 +32,7 @@ const index = () => {
                     <div className="cards w-[100%] flex flex-wrap justify-center mt-8 gap-9">
 
                         {/* Contact Us */}
-                        <div className="card1 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
+                        <div className="card1 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500" onClick={handleClick}>
                             <Image src={ContactPic} alt='Contact Us' className='w-[90px] h-[90px] px-2 py-2' />
                             <Link href={'/help'}>Contact Us</Link>
                         </div>
@@ -62,10 +68,17 @@ const index = () => {
                         </div>
 
                     </div>
+
+                    {isActive &&
+                        <div className={isActive?'absolute z-40 bg-[#3b3b3b62] w-[600px] px-[80px] py-[30px] rounded-xl': "hidden"}>
+                            <ContactForm />
+                            <b className='bg-red-500 top-1 right-2 px-4 py-2 rounded-md cursor-pointer text-white mt-2 absolute' onClick={handleClick}>X</b>
+                        </div>
+                    }
                 </div>
             </Layout>
         </>
     )
 }
 
-export default index
+export default Help

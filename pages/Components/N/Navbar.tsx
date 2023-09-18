@@ -25,7 +25,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`flex overflow-hidden relative flex-wrap items-center rounded-b-[36px] w-full h-auto px-[28px] py-[8px] text-2xl font-semibold top-0 z-40 justify-between ${isSticky ? 'sticky bg-[#fff] text-[#000] shadow-md shadow-gray-300' : 'bg-[#222648] text-[#fff]'}`}>
+        <nav className={`flex overflow-hidden relative flex-wrap items-center rounded-b-[36px] w-full h-auto px-[28px] py-[8px] text-2xl font-semibold top-0 z-50 justify-between ${isSticky ? 'sticky bg-[#fff] text-[#000] shadow-md shadow-gray-300' : 'bg-[#222648] text-[#fff]'}`}>
 
             <Link href="/" className="logo-box flex flex-wrap items-center relative z-40 gap-1" title='Home'>
                 <b className='p-2 rounded-full' title='Universal Developers'><BsRobot /></b>
