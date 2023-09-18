@@ -62,7 +62,7 @@ const index = () => {
 
                             {/* Read Blog */}
                             <div className="card6 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                                <Image src={blogPic} alt='live-chat' className='px-2 py-3 ' />
+                                <Image src={blogPic} alt='live-chat' className='w-[90px] h-[90px] px-2 py-3 ' />
                                 <Link href={'/services'}>Read Blog</Link>
                             </div>
 
