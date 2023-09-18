@@ -1,12 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const ContactForm = () => {
-    // const [isActive, setIsActive] = useState(false);
-
-    // const handleClick = (event: any) => {
-    //     setIsActive(current => !current);
-    // };
-
     return (
 
         <div className="contactForm bg-[#fff] px-[40px] py-[15px] rounded-xl">
@@ -26,4 +20,4 @@ const ContactForm = () => {
     )
 }
 
-export default ContactForm
+export default ContactForm;

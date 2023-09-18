@@ -2,21 +2,41 @@ import React, { useState } from 'react'
 import Layout from '../Components/L/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
-import ContactPic from '@/public/img/svg/contact.svg'
-import MapPic from '@/public/img/svg/map.svg'
-import CoursesProblems from '@/public/img/svg/coursesProblems.svg'
-import paymentProb from '@/public/img/svg/payment.svg'
-import FeedBackPic from '@/public/img/svg/feedback.svg'
-import DownProblems from '@/public/img/svg/download.svg'
 import ContactForm from '../Components/C/ContactForm'
+import { RiContactsBookUploadFill, RiRoadMapFill, RiErrorWarningFill, RiSecurePaymentLine, RiFeedbackFill, RiDownloadCloud2Fill } from 'react-icons/ri'
+import Map from '../Components/M/Map'
+import CoursesProblems from '../Components/C/CoursesProblems'
+import PaymentProblems from '../Components/P/PaymentProblems'
+import FeedBack from '../Components/F/FeedBack'
+import DownloadingProblems from '../Components/D/DownloadingProblems'
 
 const Help = () => {
     const [isActive, setIsActive] = useState(false);
+    const [isMapView, setIsMapView] = useState(false);
+    const [isCoursesProblems, setCoursesProblems] = useState(false);
+    const [isPaymentProblems, setPaymentProblems] = useState(false);
+    const [isFeedBack, setFeedBack] = useState(false);
+    const [isDownProblems, setDownProblems] = useState(false);
 
     const handleClick = (event: any) => {
         setIsActive(current => !current);
     };
+    const handleMapClick = (event: any) => {
+        setIsMapView(current => !current);
+    };
+    const handleCourseProblemsClick = (event: any) => {
+        setCoursesProblems(current => !current);
+    };
+    const handlePaymentProblemsClick = (event: any) => {
+        setPaymentProblems(current => !current);
+    };
+    const handleFeedbackClick = (event: any) => {
+        setFeedBack(current => !current);
+    };
+    const handleDownProblemClick = (event: any) => {
+        setDownProblems(current => !current);
+    };
+
     return (
         <>
             <Head>
@@ -32,49 +52,85 @@ const Help = () => {
                     <div className="cards w-[100%] flex flex-wrap justify-center mt-8 gap-9">
 
                         {/* Contact Us */}
-                        <div className="card1 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500" onClick={handleClick}>
-                            <Image src={ContactPic} alt='Contact Us' className='w-[90px] h-[90px] px-2 py-2' />
-                            <Link href={'/help'}>Contact Us</Link>
+                        <div className="card1 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500 py-[20px]" onClick={handleClick}>
+                            <RiContactsBookUploadFill className="text-[4.25rem]" />
+                            <b className='cursor-context-menu'>Contact Us</b>
                         </div>
 
                         {/* Onsite Map Direction */}
-                        <div className="card2 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                            <Image src={MapPic} alt='tutorialPic' className='w-[90px] px-3 py-3' />
-                            <Link href={'/help'}>Onsite Map Direction</Link>
+                        <div className="card2 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500 py-[20px]" onClick={handleMapClick}>
+                            <RiRoadMapFill className="text-[4.25rem]" />
+                            <b className='cursor-context-menu'>Onsite Map Direction</b>
                         </div>
 
                         {/* Discuss Course Problems */}
-                        <div className="card3 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                            <Image src={CoursesProblems} alt='live-chat' className='h-[90px] w-[90px] px-2 py-2' />
-                            <Link href={'/help'}>Discuss Course Problems</Link>
+                        <div className="card3 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500 py-[20px]" onClick={handleCourseProblemsClick}>
+                            <RiErrorWarningFill className="text-[4.25rem]" />
+                            <b className='cursor-context-menu'>Discuss Course Problems</b>
                         </div>
 
-                        {/* Payment / Reward Problems */}
-                        <div className="card4 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                            <Image src={paymentProb} alt='live-chat' className='h-[90px] w-[90px] px-2 py-3' />
-                            <Link href={'/help'}>Payment / Reward Problems</Link>
+                        {/* Payment Problems */}
+                        <div className="card4 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500 py-[20px]" onClick={handlePaymentProblemsClick}>
+                            <RiSecurePaymentLine className="text-[4.25rem]" />
+                            <b className='cursor-context-menu'>Payment Problems</b>
                         </div>
 
                         {/* Feedback */}
-                        <div className="card5 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                            <Image src={FeedBackPic} alt='live-chat' className='w-[90px] h-[90px] px-2 py-3' />
-                            <Link href={'/help'}>Feedback</Link>
+                        <div className="card5 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500 py-[20px]" onClick={handleFeedbackClick}>
+                            <RiFeedbackFill className="text-[4.25rem]" />
+                            <b className='cursor-context-menu'>Feedback</b>
                         </div>
 
                         {/* Downloading Problems */}
-                        <div className="card6 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                            <Image src={DownProblems} alt='live-chat' className='w-[90px] h-[90px] px-2 py-3 ' />
-                            <Link href={'/help'}>Downloading Problems</Link>
+                        <div className="card6 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500 py-[20px]" onClick={handleDownProblemClick}>
+                            <RiDownloadCloud2Fill className="text-[4.25rem]" />
+                            <b className='cursor-context-menu'>Downloading Problems</b>
                         </div>
 
                     </div>
 
                     {isActive &&
-                        <div className={isActive?'absolute z-40 bg-[#3b3b3b62] w-[600px] px-[80px] py-[30px] rounded-xl': "hidden"}>
+                        <div className={isActive ? 'absolute z-40 bg-[#3b3b3b62] w-[600px] px-[80px] py-[30px] rounded-xl' : "hidden"}>
                             <ContactForm />
                             <b className='bg-red-500 top-1 right-2 px-4 py-2 rounded-md cursor-pointer text-white mt-2 absolute' onClick={handleClick}>X</b>
                         </div>
                     }
+
+                    {isMapView &&
+                        <div className={isMapView ? 'absolute z-40 bg-[#3b3b3b62] w-[600px] px-[80px] py-[30px] rounded-xl' : "hidden"}>
+                            <Map />
+                            <b className='bg-red-500 top-1 right-2 px-4 py-2 rounded-md cursor-pointer text-white mt-2 absolute' onClick={handleMapClick}>X</b>
+                        </div>
+                    }
+
+                    {isCoursesProblems &&
+                        <div className={isCoursesProblems ? 'absolute z-40 bg-[#3b3b3b62] w-[600px] px-[80px] py-[30px] rounded-xl' : "hidden"}>
+                            <CoursesProblems />
+                            <b className='bg-red-500 top-1 right-2 px-4 py-2 rounded-md cursor-pointer text-white mt-2 absolute' onClick={handleCourseProblemsClick}>X</b>
+                        </div>
+                    }
+
+                    {isPaymentProblems &&
+                        <div className={isPaymentProblems ? 'absolute z-40 bg-[#3b3b3b62] w-[600px] px-[80px] py-[30px] rounded-xl' : "hidden"}>
+                            <PaymentProblems />
+                            <b className='bg-red-500 top-1 right-2 px-4 py-2 rounded-md cursor-pointer text-white mt-2 absolute' onClick={handlePaymentProblemsClick}>X</b>
+                        </div>
+                    }
+
+                    {isFeedBack &&
+                        <div className={isFeedBack ? 'absolute z-40 bg-[#3b3b3b62] w-[600px] px-[80px] py-[30px] rounded-xl' : "hidden"}>
+                            <FeedBack />
+                            <b className='bg-red-500 top-1 right-2 px-4 py-2 rounded-md cursor-pointer text-white mt-2 absolute' onClick={handleFeedbackClick}>X</b>
+                        </div>
+                    }
+
+                    {isDownProblems &&
+                        <div className={isDownProblems ? 'absolute z-40 bg-[#3b3b3b62] w-[600px] px-[80px] py-[30px] rounded-xl' : "hidden"}>
+                            <DownloadingProblems />
+                            <b className='bg-red-500 top-1 right-2 px-4 py-2 rounded-md cursor-pointer text-white mt-2 absolute' onClick={handleDownProblemClick}>X</b>
+                        </div>
+                    }
+
                 </div>
             </Layout>
         </>
