@@ -11,7 +11,7 @@ import reward from '@/public/img/svg/win.svg'
 import careerPic from '@/public/img/svg/career.svg'
 import playstore from '@/public/img/svg/playstore.svg'
 import blogPic from '../../public/img/svg/blog.svg'
-import Link from 'next/link'
+import ServicesCard from '../Components/S/ServicesCard'
 
 const index = () => {
     return (
@@ -30,41 +30,12 @@ const index = () => {
 
                         <div className="cards w-[60%] flex flex-wrap gap-9">
 
-                            {/* Live chat */}
-                            <div className="card1 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                                <Image src={liveChatPic} alt='live-chat' className='w-[90px] h-[90px] px-2 py-2' />
-                                <Link href={'/services'}>Live Chat Rooms</Link>
-                            </div>
-
-                            {/* Video tutorils */}
-                            <div className="card2 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                                <Image src={tutorialPic} alt='tutorialPic' className='w-[90px] px-3 py-3' />
-                                <Link href={'/services'}>Video Tutorials</Link>
-                            </div>
-
-                            {/* Certification */}
-                            <div className="card3 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                                <Image src={certificate} alt='live-chat' className='h-[90px] w-[90px] px-2 py-2' />
-                                <Link href={'/services'}>Certification</Link>
-                            </div>
-
-                            {/* Earn Reward */}
-                            <div className="card4 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                                <Image src={reward} alt='live-chat' className='h-[90px] w-[90px] px-2 py-3' />
-                                <Link href={'/services'}>Earn Reward</Link>
-                            </div>
-
-                            {/* Career Resources */}
-                            <div className="card5 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                                <Image src={careerPic} alt='live-chat' className='w-[90px] h-[90px] px-2 py-3' />
-                                <Link href={'/services'}>Career Resources</Link>
-                            </div>
-
-                            {/* Read Blog */}
-                            <div className="card6 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500">
-                                <Image src={blogPic} alt='live-chat' className='w-[90px] h-[90px] px-2 py-3 ' />
-                                <Link href={'/services'}>Read Blog</Link>
-                            </div>
+                            <ServicesCard pic={liveChatPic} title="Live Chat Rooms" link_url="/chatroom" />
+                            <ServicesCard pic={tutorialPic} title="Video Tutorials" link_url="/services" />
+                            <ServicesCard pic={certificate} title="Certification" link_url="/services" />
+                            <ServicesCard pic={reward} title="Earn Reward" link_url="/services" />
+                            <ServicesCard pic={careerPic} title="Career Resources" link_url="/services" />
+                            <ServicesCard pic={blogPic} title="Read Blog" link_url="/services" />
 
                         </div>
 
