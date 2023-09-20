@@ -41,7 +41,7 @@ const Navbar = () => {
                 <Link href="/help"><li className='py-2'>Help</li></Link>
             </ul>
 
-            <button className='bg-gradient-to-r cursor-pointer from-[#00B4D8] to-[#fff] py-2 px-[22px] rounded-[61px] text-[#000] transition-all ease-in-out duration-1000 text-lg'>Register Now</button>
+            <Link href={'/register'} className='bg-gradient-to-r cursor-pointer from-[#00B4D8] to-[#fff] py-2 px-[22px] rounded-[61px] text-[#000] transition-all ease-in-out duration-1000 text-lg'>Register Now</Link>
 
         </nav>
     )
