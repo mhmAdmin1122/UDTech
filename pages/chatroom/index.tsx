@@ -57,7 +57,7 @@ const index = () => {
                             <div className="acceptBtn flex flex-wrap justify-center w-full my-2">
                                 <button className='bg-[#171658] py-2 px-4 rounded-md font-semibold text-xl'>Proceed</button>
                             </div>
-                        </div>
+                        </div>  
 
                         <div className="Premium relative w-[380px] bg-[#235516] text-white hover:w-[450px] transition-all duration-700 hover:z-40 hover:shadow-md hover:shadow-gray-400 border-2 border-gray-200 rounded-md px-10 py-8">
                             <h2 className="price absolute bg-[#a52ea5] text-[#fff] px-4 py-2 top-[4px] left-[0px] rounded-r-md">$40</h2>
