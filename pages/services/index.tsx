@@ -33,7 +33,7 @@ const index = () => {
                             <ServicesCard pic={liveChatPic} title="Live Chat Rooms" link_url="/chatroom" />
                             <ServicesCard pic={tutorialPic} title="Video Tutorials" link_url="/services" />
                             <ServicesCard pic={certificate} title="Certification" link_url="/services" />
-                            <ServicesCard pic={reward} title="Earn Reward" link_url="/services" />
+                            <ServicesCard pic={reward} title="Earn Reward" link_url="/earnreward" />
                             <ServicesCard pic={careerPic} title="Career Resources" link_url="/services" />
                             <ServicesCard pic={blogPic} title="Read Blog" link_url="/services" />
 
