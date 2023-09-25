@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { SiUpwork } from 'react-icons/si'
 import { GiTakeMyMoney, GiClockwork } from 'react-icons/gi'
 import { FaComputer } from 'react-icons/fa6'
+import Accordian from '../Components/A/Accordian'
 
 const index = () => {
   return (
@@ -20,7 +21,7 @@ const index = () => {
           <div className="flex flex-wrap items-center justify-center gap-6 my-4 text-[#1a661e]">
 
             {/* green Icon Card */}
-            <div className="grid justify-items-center relative bg-[#151244] transition-all duration-1000 hover:bg-[#3c569e] w-[280px] h-[270px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
+            <div className="grid justify-items-center relative bg-[#151244] transition-all duration-1000 hover:bg-[#3c569e] w-[280px] h-[290px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
 
               <div className="flex items-center justify-center h-[100px] w-[100px] text-6xl bg-white text-green-600 px-4 py-3 rounded-md">
                 <SiUpwork />
@@ -36,7 +37,7 @@ const index = () => {
 
             </div>
 
-            <div className="grid justify-items-center relative bg-[#151244] transition-all duration-1000 hover:bg-[#3c569e] w-[280px] h-[270px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
+            <div className="grid justify-items-center relative bg-[#151244] transition-all duration-1000 hover:bg-[#3c569e] w-[280px] h-[290px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
 
               <div className="card_Image flex items-center justify-center h-[100px] w-[100px] text-6xl bg-white text-green-600 px-4 py-3 rounded-md">
                 <GiTakeMyMoney />
@@ -52,7 +53,7 @@ const index = () => {
 
             </div>
 
-            <div className="grid justify-items-center relative bg-[#151244] transition-all duration-1000 hover:bg-[#3c569e] w-[280px] h-[270px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
+            <div className="grid justify-items-center relative bg-[#151244] transition-all duration-1000 hover:bg-[#3c569e] w-[280px] h-[290px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
 
               <div className="card_Image flex items-center justify-center h-[100px] w-[100px] text-6xl bg-white text-green-600 px-4 py-3 rounded-md">
                 <FaComputer />
@@ -69,7 +70,7 @@ const index = () => {
             </div>
 
             {/* Blue Icon Card */}
-            <div className="grid justify-items-center relative bg-[#381244] transition-all duration-1000 hover:bg-[#823c9e] w-[280px] h-[270px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
+            <div className="grid justify-items-center relative bg-[#381244] transition-all duration-1000 hover:bg-[#823c9e] w-[280px] h-[290px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
 
               <div className="card_Image flex items-center justify-center h-[100px] w-[100px] text-6xl bg-white text-[#121544] px-4 py-3 rounded-md">
                 <GiClockwork />
@@ -85,7 +86,7 @@ const index = () => {
 
             </div>
 
-            <div className="grid justify-items-center relative bg-[#381244] transition-all duration-1000 hover:bg-[#823c9e] w-[280px] h-[270px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
+            <div className="grid justify-items-center relative bg-[#381244] transition-all duration-1000 hover:bg-[#823c9e] w-[280px] h-[290px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
 
               <div className="card_Image flex items-center justify-center h-[100px] w-[100px] text-6xl bg-white text-[#121544] px-4 py-3 rounded-md">
                 <GiTakeMyMoney />
@@ -101,7 +102,7 @@ const index = () => {
 
             </div>
 
-            <div className="grid justify-items-center relative bg-[#381244] transition-all duration-1000 hover:bg-[#823c9e] w-[280px] h-[270px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
+            <div className="grid justify-items-center relative bg-[#381244] transition-all duration-1000 hover:bg-[#823c9e] w-[280px] h-[290px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
 
               <div className="card_Image flex items-center justify-center h-[100px] w-[100px] text-6xl bg-white text-[#121544] px-4 py-3 rounded-md">
                 <FaComputer />
@@ -118,7 +119,7 @@ const index = () => {
             </div>
 
             {/* Red Icon Card */}
-            <div className="grid justify-items-center relative bg-[#a33f3f] transition-all duration-1000 hover:bg-[#d67171] w-[280px] h-[270px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
+            <div className="grid justify-items-center relative bg-[#a33f3f] transition-all duration-1000 hover:bg-[#d67171] w-[280px] h-[290px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
 
               <div className="card_Image flex items-center justify-center h-[100px] w-[100px] text-6xl bg-white text-[#ff0000] px-4 py-3 rounded-md">
                 <GiClockwork />
@@ -134,7 +135,7 @@ const index = () => {
 
             </div>
 
-            <div className="grid justify-items-center relative bg-[#a33f3f] transition-all duration-1000 hover:bg-[#d67171] w-[280px] h-[270px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
+            <div className="grid justify-items-center relative bg-[#a33f3f] transition-all duration-1000 hover:bg-[#d67171] w-[280px] h-[290px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
 
               <div className="card_Image flex items-center justify-center h-[100px] w-[100px] text-6xl bg-white text-[#ff0000] px-4 py-3 rounded-md">
                 <GiTakeMyMoney />
@@ -150,7 +151,7 @@ const index = () => {
 
             </div>
 
-            <div className="grid justify-items-center relative bg-[#a33f3f] transition-all duration-1000 hover:bg-[#d67171] w-[280px] h-[270px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
+            <div className="grid justify-items-center relative bg-[#a33f3f] transition-all duration-1000 hover:bg-[#d67171] w-[280px] h-[290px] shadow-md shadow-gray-300 border-2 border-gray-200 rounded-lg py-3 px-4 text-[#fff] hover:w-[320px]">
 
               <div className="card_Image flex items-center justify-center h-[100px] w-[100px] text-6xl bg-white text-[#ff0000] px-4 py-3 rounded-md">
                 <FaComputer />
@@ -168,7 +169,11 @@ const index = () => {
 
           </div>
 
+          <Accordian />
+
         </div>
+
+
 
       </Layout>
     </>
