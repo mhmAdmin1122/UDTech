@@ -7,6 +7,7 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-track{
   width: 1px;
 }
+
 body::-webkit-scrollbar-thumb{
   width: 1px;
 }
