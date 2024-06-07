@@ -30,6 +30,7 @@ const ContactForm = () => {
       audio.play();
     }
   }
+  
   return (
     <div className="contactForm bg-[#fff] px-[40px] py-[15px] rounded-xl">
       <h1 className="font-bold text-2xl text-center cursor-context-menu">
