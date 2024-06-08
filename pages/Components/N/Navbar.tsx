@@ -5,6 +5,7 @@ import vectorpic1 from "@/public/img/headervector1.png";
 import vectorpic2 from "@/public/img/headervector2.png";
 import Image from "next/image";
 import logo from "@/public/img/logo2.png";
+import Profile from "../P/Profile";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -66,12 +67,13 @@ const Navbar = () => {
         </Link>
       </ul>
 
-      <Link
+      {/* <Link
         href={"/register"}
         className="btn-custom"
       >
         Register Now
-      </Link>
+      </Link> */}
+      <Profile />
     </nav>
   );
 };
