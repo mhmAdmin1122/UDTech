@@ -6,7 +6,7 @@ const Layout = ({ children }: any) => {
   return (
     <div className="bg-gray-100 relative">
       <Navbar />
-      <div className="min-h-screen py-5 flex itemms-center justify-center">{children}</div>
+      <div className="min-h-screen py-5 flex itemms-center justify-center body-box">{children}</div>
       <Footer />
     </div>
   );

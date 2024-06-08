@@ -6,12 +6,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>UDTech || Home</title>
-        <meta name="description" content="Innovation to tech. Access your skills with Professionals Sugestions." />
+        <title>Home - UDTech</title>
+        <meta
+          name="description"
+          content="Innovation to tech. Access your skills with Professionals Sugestions."
+        />
       </Head>
       <Layout>
-        <Herobaner />
+        <div className="flex flex-col">
+          <Herobaner />
+        </div>
       </Layout>
     </>
-  )
+  );
 }

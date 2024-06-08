@@ -1,0 +1,40 @@
+@media (max-width: 751px) and (min-width: 525px) {
+  .right-vetcor-image {
+    @apply right-20 pointer-events-none;
+  }
+  .left-vetcor-image {
+    @apply -left-10 pointer-events-none;
+  }
+
+  /* footer */
+  .address,
+  .droper-icon-mob-menu {
+    @apply hidden;
+  }
+  .cpy-line {
+    @apply text-[12px];
+  }
+}
+@media (max-width: 524px) and (min-width: 320px) {
+  .droper-icon-mob-menu {
+    @apply flex items-center;
+  }
+  .desk-menu-box {
+    @apply rounded-b-[16px] px-[20px];
+  }
+  /* footer */
+  .address,
+  .tabs-List,
+  .left-vetcor-image,
+  .right-vetcor-image,
+  .social-links {
+    @apply hidden;
+  }
+  .cpy-line {
+    @apply text-[15px];
+  }
+
+  .footer-box {
+    @apply rounded-t-[16px] py-3 flex items-center justify-center w-full;
+  }
+}

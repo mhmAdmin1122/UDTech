@@ -1,0 +1,43 @@
+@media (max-width: 894px) and (min-width: 525px) {
+  .text-areas {
+    @apply w-full;
+  }
+  .heroPic{
+    @apply w-[85%]
+  }
+  .animatedLine h2 {
+    @apply text-3xl;
+  }
+  .banner-pic-1, .play-store-img {
+    @apply hidden;
+  }
+  .herro-banner-box {
+    @apply px-8 flex-col-reverse py-4;
+  }
+  .body-box{
+    @apply min-h-full;
+  }
+  .btn-banner-unleash{
+    @apply pl-0 justify-center; 
+  }
+}
+@media (max-width: 524px) and (min-width: 320px) {
+  .text-areas, .heroPic {
+    @apply w-full;
+  }
+  .animatedLine h2 {
+    @apply text-2xl;
+  }
+  .dynamic-text, .banner-pic-1, .play-store-img {
+    @apply hidden;
+  }
+  .herro-banner-box {
+    @apply px-8 flex-col-reverse py-4;
+  }
+  .body-box{
+    @apply min-h-full;
+  }
+  .btn-banner-unleash{
+    @apply pl-0 justify-center; 
+  }
+}

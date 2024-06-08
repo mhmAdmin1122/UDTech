@@ -17,7 +17,7 @@ const Profile = () => {
       <>
         <Link href="/profile" className="flex items-center justify-center relative">
           <FaUserCircle
-            className="cursor-pointer text-4xl hover:text-[var(--ourorangeColor)]"
+            className="cursor-pointer text-4xl hover:text-[#00b5d8]"
             onClick={handleShow}
           />
           {/* {isShow && (
