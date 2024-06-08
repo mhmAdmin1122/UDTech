@@ -37,7 +37,7 @@ const Login = () => {
       return;
     }
 
-    if (!password || password.length < 6) {
+    if (!password || password.length < 8) {
       setError("Password is invalid");
       setTimeout(() => {
         setError("");
@@ -98,6 +98,7 @@ const Login = () => {
             />
           )}
         </div>
+        {error && error}
         <div className="flex justify-center mt-4">
           <button type="submit" className="btn-custom">
             Login Now
