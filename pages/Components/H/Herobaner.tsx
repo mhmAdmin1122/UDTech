@@ -2,6 +2,7 @@ import Image from "next/image";
 import heroMain from "@/public/img/heropicmain.png";
 import playstore from "@/public/img/playstore.svg";
 import bannerPic from "@/public/img/freepik.png";
+import Link from "next/link";
 
 const Herobaner = () => {
   return (
@@ -42,10 +43,10 @@ const Herobaner = () => {
         </p>
         <br />
         <div className="flex flex-wrap btn-banner-unleash gap-4 items-center pl-[90px]">
-          <button className="btn-custom hover:shadow-lg hover:shadow-gray-400">
+          <Link href="/services" className="btn-custom hover:shadow-lg hover:shadow-gray-400">
             Unleash More
-          </button>
-          <Image src={playstore} alt="play-store" className="cursor-pointer play-store-img" />
+          </Link>
+          {/* <Image src={playstore} alt="play-store" className="cursor-pointer play-store-img" /> */}
         </div>
       </div>
 

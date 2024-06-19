@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
       <div className="cpy-line flex flex-wrap items-center gap-2">
         <h3 className="cursor-context-menu">
-          2024 - All &copy; Rights reserved by UDTech{" "}
+          &copy; 2024 UDTech. All Rights Reserved.{" "}
         </h3>
       </div>
       <div className="social-links flex flex-wrap items-center gap-6">
