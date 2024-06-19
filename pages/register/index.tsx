@@ -8,7 +8,7 @@ const RegisterPage = () => {
   return (
     <>
       <Head>
-        <title>Register Now - INTACAD</title>
+        <title>Register Now - udt</title>
       </Head>
       <Layout>
         <div className="px-44 py-14">

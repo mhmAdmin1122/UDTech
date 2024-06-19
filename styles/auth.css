@@ -3,7 +3,9 @@
   .log-in-container {
     @apply px-[0.5rem];
   }
-  .loginForm-box div {
+  .loginForm-box div, .register-form-box div {
     @apply w-[260px];
   }
+
+  /* Register form */
 }
