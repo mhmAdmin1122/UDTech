@@ -1,0 +1,5 @@
+@media (max-width: 1000px) and (min-width: 200px) {
+    .helpPage {
+        @apply px-[2rem];
+    }
+}

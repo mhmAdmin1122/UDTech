@@ -52,7 +52,7 @@ const Help = () => {
                     <div className="cards w-[100%] flex flex-wrap justify-center mt-8 gap-9">
 
                         {/* Contact Us */}
-                        <div className="card1 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500 py-[20px]" onClick={handleClick}>
+                        <div className="card1_1 hover:shadow-lg hover:shadow-[#555694] w-[220px] h-[160px] bg-blue-900 rounded-lg text-white grid justify-items-center justify-center items-center transition-all ease-in-out duration-500 py-[20px]" onClick={handleClick}>
                             <RiContactsBookUploadFill className="text-[4.25rem]" />
                             <b className='cursor-context-menu'>Contact Us</b>
                         </div>
