@@ -21,11 +21,12 @@ const index = () => {
       </Head>
       <Layout>
         {/* Main Content Services Page */}
-        <div className="px-20 pt-8 pb-14">
+        <div className="px-20 pt-8 pb-14 services-box">
           <div className="title_services pl-[100px] flex flex-wrap w-full items-center font-bold text-3xl">
             <h1 className="cursor-context-menu">Our Services</h1>
             <Image src={labelpic} alt="24/7-pic" />
           </div>
+
           <div className="flex flex-wrap w-full justify-around items-center">
             <div className="cards w-[60%] flex flex-wrap gap-9">
               <ServicesCard

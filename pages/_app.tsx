@@ -3,6 +3,7 @@ import '@/styles/button.css'
 import '@/styles/register.css'
 import '@/styles/Header.css'
 import '@/styles/banner.css'
+import '@/styles/services.css'
 import type { AppProps } from 'next/app'
 import { SessionProvider } from "next-auth/react"
 
