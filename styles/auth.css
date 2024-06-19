@@ -1,0 +1,9 @@
+@media (max-width: 490px) and (min-width: 200px) {
+  /* login form */
+  .log-in-container {
+    @apply px-[0.5rem];
+  }
+  .loginForm-box div {
+    @apply w-[260px];
+  }
+}

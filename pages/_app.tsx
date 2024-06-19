@@ -5,6 +5,7 @@ import '@/styles/Header.css'
 import '@/styles/banner.css'
 import '@/styles/services.css'
 import '@/styles/help.css'
+import '@/styles/auth.css'
 import type { AppProps } from 'next/app'
 import { SessionProvider } from "next-auth/react"
 

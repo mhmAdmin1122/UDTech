@@ -63,7 +63,7 @@ const Login = () => {
   };
 
   return (
-    <form className="grid items-center justify-center"  onSubmit={login}>
+    <form className="grid items-center justify-center loginForm-box" onSubmit={login}>
       <div className="w-[420px] flex justify-center flex-col gap-2">
         <div className="relative">
           <MdAlternateEmail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
