@@ -1,5 +1,19 @@
 @media (max-width: 1000px) and (min-width: 200px) {
-    .helpPage {
-        @apply px-[2rem];
-    }
+  .helpPage {
+    @apply px-[2rem];
+  }
+}
+
+@media (max-width: 600px) and (min-width: 200px) {
+  .contact-form-container,
+  .map-form-container,
+  .dwdProb-form-container,
+  .PayProb-form-container,
+  .feedback-form-container,
+  .course-form-container {
+    @apply w-[300px] px-4 fixed top-[65px] z-[99];
+  }
+  .contactForm {
+    @apply flex items-center justify-center gap-4 flex-col px-[20px];
+  }
 }
