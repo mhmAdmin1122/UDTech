@@ -11,7 +11,7 @@ const RegisterPage = () => {
         <title>Register Now - udt</title>
       </Head>
       <Layout>
-        <div className="px-44 py-14">
+        <div className="px-44 py-14 register-form-container">
           <h1 className="text-4xl font-bold text-center">Register Now</h1>
           <div className="flex flex-wrap items-center gap-2 w-full justify-center my-3">
             <Link

@@ -3,7 +3,11 @@
   .log-in-container {
     @apply px-[0.5rem] flex items-center justify-center min-h-screen;
   }
-  .loginForm-box div, .register-form-box div {
+  .register-form-container {
+    @apply px-[0.5rem];
+  }
+  .loginForm-box div,
+  .register-form-box div {
     @apply w-[260px];
   }
 
