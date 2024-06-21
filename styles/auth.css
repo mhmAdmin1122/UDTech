@@ -1,7 +1,7 @@
 @media (max-width: 490px) and (min-width: 200px) {
   /* login form */
   .log-in-container {
-    @apply px-[0.5rem] flex items-center justify-center;
+    @apply px-[0.5rem] flex items-center justify-center min-h-screen;
   }
   .loginForm-box div, .register-form-box div {
     @apply w-[260px];

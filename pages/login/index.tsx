@@ -11,7 +11,7 @@ const LoginPage = () => {
         <title>Login Now</title>
       </Head>
       <Layout>
-        <div className="px-44 py-14 log-in-container min-h-screen">
+        <div className="px-44 py-14 log-in-container">
           <h1 className="text-4xl font-bold text-center">Login Now</h1>
           <div className="flex flex-wrap items-center gap-2 w-full justify-center my-3">
             <Link
