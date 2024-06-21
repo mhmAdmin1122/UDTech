@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="footer-box flex relative z-40 rounded-t-[36px] flex-wrap items-center w-full justify-between bg-[#222648] text-[#fff] pt-[29px] pb-[28px] px-[28px]">
+    <footer className="footer-box flex relative z-30 rounded-t-[36px] flex-wrap items-center w-full justify-between bg-[#222648] text-[#fff] pt-[29px] pb-[28px] px-[28px]">
       <div className="address flex flex-wrap items-center gap-2">
         <FaLocationArrow />
         <h3 className="cursor-context-menu">

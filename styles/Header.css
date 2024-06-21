@@ -37,4 +37,8 @@
   .footer-box {
     @apply rounded-t-[16px] py-3 flex items-center justify-center w-full;
   }
+
+  .drop-down-menu-list {
+    @apply flex w-full flex-col justify-start items-center bg-gradient-to-r font-semibold from-[#00B4D8] to-[#fff] text-black absolute left-0 pt-8 pb-4 px-2 top-[45px] z-40;
+  }
 }
